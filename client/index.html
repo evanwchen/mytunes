@@ -18,10 +18,16 @@
     <script src="views/LibraryView.js"></script>
     <script src="views/LibraryEntryView.js"></script>
     <script src="views/AppView.js"></script>
+    <script src="views/SongQueueView.js"></script>
+    <script src="views/SongQueueEntryView.js"></script>
+
+
 
     <script>
       $(function() {
         // set up model objects
+
+        //library is instance of Songs collection class
         var library = new Songs(songData);
         var app = new AppModel({library: library});
 
